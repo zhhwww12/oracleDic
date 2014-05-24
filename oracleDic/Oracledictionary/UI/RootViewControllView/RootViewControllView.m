@@ -88,7 +88,8 @@
 {
     orcaleAllView.delegate = self;
     orcaleAllView.dataSource = self;
-    orcaleAllView.type = iCarouselTypeCoverFlow;
+    orcaleAllView.type = iCarouselTypeLinear;
+    orcaleAllView.stopAtItemBoundary = NO;
     if(STATU_HEIGHT>1000)
     {
         orcaleAllView.frame = CGRectMake(0, 0, SCREEN_HEIGHT, SCREEN_WIDTH);
@@ -104,18 +105,18 @@
 }
 - (NSUInteger)numberOfItemsInCarousel:(iCarousel *)carousel
 {
-    return 14;
+    return 6;
 }
 - (UIView *)carousel:(iCarousel *)carousel viewForItemAtIndex:(NSUInteger)index
 {
-    view = (UIView*)[[UIImageView alloc] initWithImage:[UIImage imageNamed:[NSString stringWithFormat:@"%ld.jpg",index+1]]] ;
+    view = (UIView*)[[UIImageView alloc] initWithImage:[UIImage imageNamed:[NSString stringWithFormat:@"%d.jpg",index+1]]] ;
     if(STATU_HEIGHT>1000)
     {
-        view.frame = CGRectMake(SCREEN_WIDTH/2, SCREEN_HEIGHT/2, 200, 200);
+        view.frame = CGRectMake(SCREEN_WIDTH/2, SCREEN_HEIGHT/2, 200, 400);
     }
     else
     {
-        view.frame = CGRectMake(SCREEN_HEIGHT/2, SCREEN_WIDTH/2, 200, 200);
+        view.frame = CGRectMake(SCREEN_HEIGHT/2, SCREEN_WIDTH/2, 200, 400);
     }
     
     return view;
@@ -128,7 +129,7 @@
 {
     
     
-    UIImageView * oneImageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:[NSString stringWithFormat:@"%ld.jpg",index+1]]] ;
+    UIImageView * oneImageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:[NSString stringWithFormat:@"%d.jpg",index+1]]] ;
     
     
     DetailOracleVC * dOVC = [[DetailOracleVC alloc] init];
@@ -184,8 +185,7 @@
         abountBt.frame =CGRectMake(SCREEN_HEIGHT-100, SCREEN_WIDTH-60, 40, 40);
     }
  
-    
-    
+
 }
 
 /*

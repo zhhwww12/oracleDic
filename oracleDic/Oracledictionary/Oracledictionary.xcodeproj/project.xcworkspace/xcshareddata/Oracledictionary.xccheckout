@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>B7448C46-321A-410D-94C7-4A43024A25E6</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Oracledictionary</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>E3227653-63C0-4A42-A64C-E055E57296DF</key>
+		<string>https://github.com/zhhwww12/oracleDic.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>oracleDic/Oracledictionary/Oracledictionary.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>E3227653-63C0-4A42-A64C-E055E57296DF</key>
+		<string>../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/zhhwww12/oracleDic.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>E3227653-63C0-4A42-A64C-E055E57296DF</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>E3227653-63C0-4A42-A64C-E055E57296DF</string>
+			<key>IDESourceControlWCCName</key>
+			<string>oracleDic</string>
+		</dict>
+	</array>
+</dict>
+</plist>

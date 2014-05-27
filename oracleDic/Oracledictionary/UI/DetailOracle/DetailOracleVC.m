@@ -134,7 +134,6 @@
 {
     imageView = [[UIImageView alloc] initWithFrame:CGRectMake((SCREEN_WIDTH-400)/2, (SCREEN_HEIGHT-400)/2, 400, 400)];
     
-    
     imageView.image = self.oneImage;
     [self.view addSubview:imageView];
     

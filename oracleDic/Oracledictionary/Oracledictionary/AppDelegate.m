@@ -15,15 +15,46 @@
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
     
-    RootViewControllView * rootVc = [[RootViewControllView alloc] init];
-    self.window.rootViewController = rootVc;
     
     
+    [self setAnimationBooot];
+    [self performSelector:@selector(loadingRootVc:) withObject:self afterDelay:2];
+    
+
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     return YES;
 }
+- (void)loadingRootVc:(id)sender
+{
+    RootViewControllView * rootVc = [[RootViewControllView alloc] init];
+    self.window.rootViewController = rootVc;
+}
+- (void)setAnimationBooot
+{
 
+    
+    UIView * backView = [[UIView alloc] initWithFrame:self.window.bounds];
+    [self.window addSubview:backView];
+  
+    NSArray * bootImageAy = [NSArray arrayWithObjects:[UIImage imageNamed:@"1.png"],
+                             [UIImage imageNamed:@"2.png"],
+                             [UIImage imageNamed:@"3.png"],
+                             [UIImage imageNamed:@"4.png"],nil];
+    
+    UIImageView * myImageView = [[UIImageView alloc] init];
+    myImageView.frame = CGRectMake(self.window.frame.size.width/2-40, self.window.frame.size.height/2-40, 80, 80);
+    myImageView.animationImages = bootImageAy;
+    myImageView.animationDuration = 3;
+    myImageView.animationRepeatCount = 1;
+    [myImageView startAnimating];
+    
+    [backView addSubview:myImageView];
+    
+    
+
+    
+}
 - (void)applicationWillResignActive:(UIApplication *)application
 {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
